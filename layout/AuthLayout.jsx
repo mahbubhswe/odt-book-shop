@@ -8,7 +8,7 @@ export default function DashboardLayout({ children, pageTitle }) {
         <title>{pageTitle ? pageTitle + " | Book shop" : "Book shop"}</title>
       </Head>
       <main>
-        <Container>{children}</Container>
+        <Container maxWidth="sm">{children}</Container>
       </main>
     </React.Fragment>
   );

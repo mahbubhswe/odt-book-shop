@@ -3,7 +3,7 @@ import { Container } from "@mui/system";
 import Head from "next/head";
 import React from "react";
 import NavBar from "../components/NavBar";
-import SideBarScreen from "../components/SideBarScreen";
+import SideBar from "../components/SideBar";
 import styles from "../styles/layout.module.css";
 
 export default function Layout({ children, pageTitle }) {
@@ -16,7 +16,7 @@ export default function Layout({ children, pageTitle }) {
         <Stack direction="row">
           {/* left sidebar */}
           <Box sx={{display:{xs:"none",sm:"none",md:"block",xl:"block"} ,width: "300px", height: "100vh", background: "#FCC307" }}>
-            <SideBarScreen />
+            <SideBar />
           </Box>
           {/* rightbar */}
           <Box sx={{ flexGrow: 1 }}>
