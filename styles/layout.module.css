@@ -1,0 +1,22 @@
+.titleTextLeft {
+  height: 50px;
+  line-height: 50px;
+  background: #fcc307;
+  font-size: 21px;
+  font-family: Mulish;
+  color: #000000;
+  font-style: italic;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.titleTextRight {
+  height: 50px;
+  line-height: 50px;
+  background: #000000;
+  color: #fcc307;
+  font-size: 21px;
+  font-family: Mulish;
+  font-style: italic;
+  padding-left: 12px;
+  padding-right: 12px;
+}

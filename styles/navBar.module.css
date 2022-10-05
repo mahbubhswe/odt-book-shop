@@ -1,0 +1,16 @@
+.authBtn {
+  text-transform: none;
+  font-family: Mulish;
+  font-style: italic;
+}
+.navItem {
+  font-size: 16px;
+  font-family: Mulish;
+  color: #000000;
+}
+.logoText {
+  font-size: 18px;
+  font-family: Mulish;
+  color: #000000;
+  font-weight: bold;
+}
