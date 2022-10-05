@@ -1,4 +1,4 @@
-import { Grid, Pagination, Stack, Typography } from "@mui/material";
+import { Grid, Pagination, Stack } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";

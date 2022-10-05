@@ -1,6 +1,12 @@
 .sideBarItem {
   display: flex;
   justify-content: space-between;
+  border-radius: 25px;
+  padding: 1px 1px 1px 10px;
+}
+.sideBarItem:hover {
+  background-color: #EFB701;
+  color: #ffd90d;
 }
 .sideBarItemTitle {
   font-size: 30px;
@@ -21,9 +27,7 @@
   font-style: italic;
   font-weight: 900;
 }
-.sideBarBoldText {
-  font-weight: 900;
-}
+
 .userAccount {
   position: absolute;
   bottom: 10px;

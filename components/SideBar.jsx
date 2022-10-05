@@ -13,6 +13,7 @@ import {
 import styles from "../styles/sideBar.module.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
+import Link from "next/link";
 export default function SideBarScreen() {
   return (
     <React.Fragment>
@@ -22,7 +23,9 @@ export default function SideBarScreen() {
         </Typography>
         <Stack spacing={2}>
           <Typography className={styles.sideBarItem} component="div">
-            <Typography>2001:Odyssey</Typography>
+            <Link href="/">
+              <a>2001:Odyssey</a>
+            </Link>
             <Button
               type="button"
               size="small"
@@ -32,9 +35,9 @@ export default function SideBarScreen() {
             </Button>
           </Typography>
           <Typography className={styles.sideBarItem} component="div">
-            <Typography className={styles.sideBarBoldText}>
-              글과 파도
-            </Typography>
+            <Link href="/">
+              <a className={styles.sideBarBoldText}>글과 파도</a>
+            </Link>
             <Button
               type="button"
               size="small"
@@ -44,9 +47,9 @@ export default function SideBarScreen() {
             </Button>
           </Typography>
           <Typography className={styles.sideBarItem} component="div">
-            <Typography className={styles.sideBarBoldText}>
-              신림드로잉 클럽
-            </Typography>
+            <Link href="/">
+              <a className={styles.sideBarBoldText}>신림드로잉 클럽</a>
+            </Link>
             <Button
               type="button"
               size="small"
@@ -57,9 +60,14 @@ export default function SideBarScreen() {
           </Typography>
         </Stack>
         <Stack spacing={2} mt={5}>
-          <Typography className={styles.sideBarBoldText}>티켓팅</Typography>
+          <Link href="/">
+            <a className={styles.sideBarItem}>티켓팅</a>
+          </Link>
+
           <Typography className={styles.sideBarItem} component="div">
-            <Typography className={styles.sideBarBoldText}>도서관</Typography>
+            <Link href="/">
+              <a className={styles.sideBarBoldText}>도서관</a>
+            </Link>
             <IconButton>
               <ArrowForwardIosIcon
                 sx={{ width: "20px", height: "15px", color: "#000000" }}
@@ -68,11 +76,15 @@ export default function SideBarScreen() {
           </Typography>
         </Stack>
         <Stack spacing={2} mt={5} ml={2}>
-          <Typography className={styles.sideBarBoldText}>독서</Typography>
-          <Typography className={styles.sideBarBoldText}>드로잉</Typography>
+          <Link href="/">
+            <a className={styles.sideBarItem}>독서</a>
+          </Link>
+          <Link href="/">
+            <a className={styles.sideBarItem}>드로잉</a>
+          </Link>
         </Stack>
       </Box>
-      <List className={styles.userAccount} sx={{ml:"10px"}}>
+      <List className={styles.userAccount} sx={{ ml: "10px" }}>
         <ListItem>
           <ListItemIcon>
             <AccountCircleRoundedIcon
