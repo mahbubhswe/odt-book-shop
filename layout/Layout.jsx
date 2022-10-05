@@ -22,7 +22,7 @@ export default function Layout({ children, pageTitle }) {
           <Box sx={{ flexGrow: 1 }}>
             {/* navbar */}
             <NavBar />
-            <Stack direction="row" sx={{ ml: "30px", mt: "50px" }}>
+            <Stack direction="row" sx={{ ml: "30px", my: "25px" }}>
               <Typography className={styles.titleTextLeft}>
                 2001:Odyssey
               </Typography>
@@ -31,7 +31,7 @@ export default function Layout({ children, pageTitle }) {
             {/* main content */}
             <Container
               maxWidth="md"
-              sx={{ height: "490px", display: "grid", placeContent: "center" }}
+              sx={{ minHeight: "490px", display: "grid", placeContent: "center" }}
             >
               {children}
             </Container>

@@ -21,7 +21,7 @@ export default function FreeBookScreen({ freeBookList }) {
         ))}
       </Grid>
 
-      <Stack sx={{ mt: "80px",py:"5px" }} justifyContent="center" alignItems="center">
+      <Stack sx={{py:"20px" }} justifyContent="center" alignItems="center">
         <Pagination count={5} sx={{ fontStyle: "italic" }} />
       </Stack>
     </React.Fragment>
