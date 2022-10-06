@@ -22,8 +22,7 @@ export default function FreeBookScreen({ freeBookList }) {
         }}
       >
         {rows.map((row) => (
-          
-          <div   key={row.key}>
+          <div key={row.key}>
             <Typography
               component="div"
               sx={{
@@ -36,10 +35,9 @@ export default function FreeBookScreen({ freeBookList }) {
                 marginTop: "35px",
               }}
             >
-            {row.map((col) => (
-                
-              <Typography
-                key={col.id}
+              {row.map((col) => (
+                <Typography
+                  key={col.id}
                   component="div"
                   sx={{
                     margin: {
