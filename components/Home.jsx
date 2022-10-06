@@ -6,7 +6,7 @@ export default function Home() {
       <Link href="/book/free-book-list">
         <a>free book list</a>
       </Link>
-      <Link href="/book/free-book-list">
+      <Link href="/book/paid-book-list">
         <a>paid book list</a>
       </Link>
     </div>
