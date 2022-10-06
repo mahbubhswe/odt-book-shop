@@ -12,6 +12,8 @@ import Link from "next/link";
 import ButtonNav from "./ButtonNav";
 import LinkNav from "./LinkNav";
 import styles from "../styles/paidBook.module.css";
+import { isMobile } from "react-device-detect";
+
 export default function FreeBookScreen({ paidBookList }) {
   return (
     <React.Fragment>
@@ -25,7 +27,14 @@ export default function FreeBookScreen({ paidBookList }) {
           공지사항
         </Button>
         {/* display book list */}
-        <Grid container mt={3} spacing={0}>
+        <Grid
+          container
+          mt={3}
+          spacing={2}
+          direction="row"
+          justifyContent={{ xm: "center", sm: "center", md: "flex-start" }}
+          alignItems="center"
+        >
           {paidBookList.map((item, index) => {
             return (
               <Grid item key={index} className={styles.bookItem}>
@@ -35,7 +44,7 @@ export default function FreeBookScreen({ paidBookList }) {
                       src={item.img}
                       alt="paid book"
                       height={213}
-                      width={index === 1 ? 300 : 128}
+                      width={index === 1 ? (isMobile ? 128 : 300) : 128}
                       quality={100}
                     />
                   </a>
