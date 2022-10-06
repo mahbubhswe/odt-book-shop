@@ -43,7 +43,7 @@ export default function FreeBookScreen({ freeBookList }) {
                   component="div"
                   sx={{
                     margin: {
-                      xs: "50px",
+                      xs: "10px",
                       sm: "10px 35px -7px 35px",
                       md: "10px 35px -7px 35px",
                     },
