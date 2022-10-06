@@ -1,10 +1,10 @@
 import React from "react";
 import PaidBookScreen from "../../components/PaidBookScreen";
 import Layout from "../../layout/Layout";
-import { freeBookList } from "../../utils/freeBookList.js";
+import { paidBookList } from "../../utils/paidBookList.js";
 import Loading from "../../components/Loading";
 export default function Index() {
-  if (!freeBookList) {
+  if (!paidBookList) {
     return (
       <Layout pageTitle="Loading...">
         <Loading />
@@ -12,8 +12,8 @@ export default function Index() {
     );
   }
   return (
-    <Layout pageTitle="Free book list">
-      <PaidBookScreen freeBookList={freeBookList} />
+    <Layout pageTitle="Paid book list">
+      <PaidBookScreen paidBookList={paidBookList} />
     </Layout>
   );
 }

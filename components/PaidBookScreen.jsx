@@ -9,7 +9,7 @@ export default function FreeBookScreen({ paidBookList }) {
       <Typography>
         “ 공상 과학 소설, 영화 그리고 커피를 좋아하는 사람들 ”
       </Typography>
-      <Stack direction="row" spacing={1}>
+      <Stack direction="row" spacing={.2}>
         <Button type="button" size="small" className={styles.itemBtn}>
           서울/경기
         </Button>

@@ -3,4 +3,10 @@
   border-radius: 25px;
   font-style: italic;
   color: #ffe715;
+  font-size: 8px;
+}
+
+.itemBtn:hover {
+  border:1px solid black;
+  color: black;
 }
