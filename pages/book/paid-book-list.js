@@ -1,5 +1,5 @@
 import React from "react";
-import FreeBookScreen from "../../components/FreeBookScreen";
+import PaidBookScreen from "../../components/PaidBookScreen";
 import Layout from "../../layout/Layout";
 import { freeBookList } from "../../utils/freeBookList.js";
 import Loading from "../../components/Loading";
@@ -13,7 +13,7 @@ export default function Index() {
   }
   return (
     <Layout pageTitle="Free book list">
-      <FreeBookScreen freeBookList={freeBookList} />
+      <PaidBookScreen freeBookList={freeBookList} />
     </Layout>
   );
 }

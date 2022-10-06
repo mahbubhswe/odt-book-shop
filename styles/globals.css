@@ -7,9 +7,14 @@ body {
   font-family: Mulish;
 }
 a {
-  color:#000000;
+  color: #000000;
   text-decoration: none;
 }
-a:hover{
-  color:#FFE715
+a:hover {
+  color: #ffe715;
+}
+.borderDiv {
+  color:#D8B58F;
+  background-image: url(/images/border.jpg);
+  background-repeat: no-repeat;
 }
