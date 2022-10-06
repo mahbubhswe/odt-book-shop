@@ -28,7 +28,7 @@ export default function FreeBookScreen({ paidBookList }) {
         <Grid container mt={3} spacing={0}>
           {paidBookList.map((item, index) => {
             return (
-              <Grid item className={styles.bookItem}>
+              <Grid item key={index} className={styles.bookItem}>
                 <Link href="/">
                   <a>
                     <Image
