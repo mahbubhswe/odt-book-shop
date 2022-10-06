@@ -15,26 +15,28 @@ export default function Layout({ children, pageTitle }) {
       <main>
         <Stack direction="row">
           {/* left sidebar */}
-          <Box sx={{display:{xs:"none",sm:"none",md:"block",xl:"block"} ,width: "300px", height: "100vh", background: "#FCC307" }}>
+          <Box
+            sx={{
+              display: { xs: "none", sm: "none", md: "block", xl: "block" },
+              width: "300px",
+              height: "100vh",
+              background: "#FCC307",
+            }}
+          >
             <SideBar />
           </Box>
           {/* rightbar */}
           <Box sx={{ flexGrow: 1 }}>
             {/* navbar */}
             <NavBar />
-            <Stack direction="row" sx={{ ml: "30px", my: "25px" }}>
+            <Stack direction="row" sx={{ ml: "30px", my: "20px" }}>
               <Typography className={styles.titleTextLeft}>
                 2001:Odyssey
               </Typography>
               <Typography className={styles.titleTextRight}>19</Typography>
             </Stack>
             {/* main content */}
-            <Container
-              maxWidth="md"
-              sx={{ minHeight: "490px", display: "grid", placeContent: "center" }}
-            >
-              {children}
-            </Container>
+            <Container>{children}</Container>
           </Box>
         </Stack>
       </main>
