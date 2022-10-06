@@ -44,7 +44,7 @@ export default function FreeBookScreen({ paidBookList }) {
                       src={item.img}
                       alt="paid book"
                       height={213}
-                      width={index === 1 ? (isMobile ? 128 : 300) : 128}
+                      width={index === 1 ? (isMobile=="true" ? 128 : 300) : 128}
                       quality={100}
                     />
                   </a>
